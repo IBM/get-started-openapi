@@ -1,0 +1,4 @@
+node_modules
+*.log
+openapi/openapi.json
+test/python-client

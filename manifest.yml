@@ -1,0 +1,5 @@
+---
+applications:
+ - name: GetStartedOpenAPI
+   random-route: true
+   memory: 256M
