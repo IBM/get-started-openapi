@@ -56,4 +56,4 @@ Now that you have set-up your development environment, it is time to "kick the t
 
 ## Conclusion
 
-This is a v1 release of the guide and we plan to continue improving it. We would love feedback. If you have any suggestions or find a defect with the code, please open an issue or submit a Pull Request to the respoitory.
+This is a v1 release of the guide and we plan to continue improving it. We would love feedback. If you have any suggestions or find a defect with the code, please open an issue or submit a Pull Request to the repository.
