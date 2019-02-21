@@ -1,10 +1,8 @@
-swagger: "2.0"
+swagger: '2.0'
 basePath: "/v1"
-schemes: ['http']
-info: {
-  version: "1.0.0",
-  title: "Get Started with OpenAPI"
-}
-definitions: {
-}
-
+schemes:
+- http
+info:
+  version: 1.0.0
+  title: Get Started with OpenAPI
+definitions:

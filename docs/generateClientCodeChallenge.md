@@ -66,6 +66,8 @@ You now have a Python client library which interfaces you with the application A
 
 With the application still running, you can run the [test code](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/test/test_apis.py) and client as follows:
 
+*Note: The app should be restarted before running tests to clear the cache.*
+
 ```
 python ./test/test_apis.py
 ```
