@@ -35,7 +35,7 @@ Go to the URL returned in the response and download the zipped Python library.
 
 2. Extract the zipped code
 
-Extract the zipped code to a directory of your choosing. We recommend extracting it in the [application test directory](https://github.ibm.com/developer-first-guild/get-started-openapi/tree/master/test) as this is what the client test code references. If not, you will need to change this [path](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/test/test_apis.py#L27).
+Extract the zipped code to a directory of your choosing. We recommend extracting it in the [application test directory](https://github.com/IBM/get-started-openapi/tree/master/test) as this is what the client test code references. If not, you will need to change this [path](https://github.com/IBM/get-started-openapi/blob/master/test/test_apis.py#L27).
 
 The extracted code will more than likely have a base directory `python-client`, and be structured similar to the following:
 - `swagger_client`: API code
@@ -62,9 +62,9 @@ self.host = "http://localhost:3000/v1"
 
 4. Verify the client library
 
-You now have a Python client library which interfaces you with the application APIs. This makes calling the app APIs much simpler to use. You can try this out and also validate that the client library works with the app APIs by running the [test code](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/test/test_apis.py) provided.
+You now have a Python client library which interfaces you with the application APIs. This makes calling the app APIs much simpler to use. You can try this out and also validate that the client library works with the app APIs by running the [test code](https://github.com/IBM/get-started-openapi/blob/master/test/test_apis.py) provided.
 
-With the application still running, you can run the [test code](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/test/test_apis.py) and client as follows:
+With the application still running, you can run the [test code](https://github.com/IBM/get-started-openapi/blob/master/test/test_apis.py) and client as follows:
 
 *Note: The app should be restarted before running tests to clear the cache.*
 
