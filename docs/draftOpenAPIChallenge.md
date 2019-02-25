@@ -23,18 +23,18 @@ npm install -g swagger-inline
 
 2. Add OpenAPI endpoints inline comments to the application API endpoints
 
-The comments should be added to the sample app `server.js` file where the app API endpoints are defined. The [visitors POST API](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L39) comment has already been added for guidance.
+The comments should be added to the sample app `server.js` file where the app API endpoints are defined. The [visitors POST API](https://github.com/IBM/get-started-openapi/blob/master/server.js#L39) comment has already been added for guidance.
 
 The comments should be added above the following API endpoints:
-- [visitors GET API](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L86)
-- [visitors GET with ID API](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L106)
-- [visitors DELETE API](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L134)
+- [visitors GET API](https://github.com/IBM/get-started-openapi/blob/master/server.js#L86)
+- [visitors GET with ID API](https://github.com/IBM/get-started-openapi/blob/master/server.js#L106)
+- [visitors DELETE API](https://github.com/IBM/get-started-openapi/blob/master/server.js#L134)
 
 as these are the API endpoints for the app.
 
 Use the [swagger-inline example](https://www.npmjs.com/package/swagger-inline#1-create-a-project), the [OAS 2.0](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md) and the [swagger pet store example](https://petstore.swagger.io/) as your guide.
 
-*Note: The [swagger-inline base file](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/openapi/openapiBase.yaml) is provided for you. You should add the `visitor` object to the `definitions` part of this file.*
+*Note: The [swagger-inline base file](https://github.com/IBM/get-started-openapi/blob/master/openapi/openapiBase.yaml) is provided for you. You should add the `visitor` object to the `definitions` part of this file.*
 
 3. Generate the OAS from the CLI
 
