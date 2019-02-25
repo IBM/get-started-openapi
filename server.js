@@ -35,6 +35,28 @@ router.use(function(req, res, next) {
  *   201: visitor object added
  *   409: duplicate visitor
  */
+
+/*
+ * @api [post] /visitors
+ * description: "Sets visitor"
+ * parameters:
+ *   - in: "body"
+ *     name: "visitor"
+ *     description: "The visitor to add."
+ *     required: true
+ *     schema:
+ *       $ref: "#/definitions/visitor"
+ * responses:
+ *   "201":
+ *     description: "Successful response"
+ *     schema:
+ *       $ref: "#/definitions/visitor"
+ *   "409":
+ *     description: "Duplicate error"
+ *     schema:
+ *       type: object
+ *
+ */
 router.post('/visitors', function (request, response) {
   const userName = request.body.name;
   const visitorObj = model.setVisitor(userName);

@@ -23,15 +23,18 @@ npm install -g swagger-inline
 
 2. Add OpenAPI endpoints inline comments to the application API endpoints
 
-The comments should be added to the sample app `server.js` file where the app API endpoints are defined. The comments should be added above the:
-- [visitors POST API](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L38)
-- [visitors GET API](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L64)
-- [visitors GET with ID API](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L84)
-- [visitors DELETE API](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L112)
+The comments should be added to the sample app `server.js` file where the app API endpoints are defined. The [visitors POST API](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L39) comment has already been added for guidance.
+
+The comments should be added above the following API endpoints:
+- [visitors GET API](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L86)
+- [visitors GET with ID API](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L106)
+- [visitors DELETE API](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L134)
 
 as these are the API endpoints for the app.
 
-Use the [swagger-inline example](https://www.npmjs.com/package/swagger-inline#1-create-a-project) and the [OAS 2.0](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md) as your guide. The [swagger-inline base file](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/openapi/openapiBase.yaml) is provided for you.
+Use the [swagger-inline example](https://www.npmjs.com/package/swagger-inline#1-create-a-project), the [OAS 2.0](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md) and the [swagger pet store example](https://petstore.swagger.io/) as your guide.
+
+*Note: The [swagger-inline base file](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/openapi/openapiBase.yaml) is provided for you. You should add the `visitor` object to the `definitions` part of this file.*
 
 3. Generate the OAS from the CLI
 
@@ -98,27 +101,6 @@ You should also notice the API documentation rendered by the editor from your OA
 ## Completion
 
 OAS is generated and you verified its syntax using `swagger-parser`.
-
-## Verification
-
-To ensure completion of the challenge, the verification questions shown below should be answered. The "Try it out" capability of the swagger editor should be used to help answer the questions. The following configuration steps are necessary to enable the "Try it out" capability of the swagger editor to work with your application:
-
-1. You will need to enable [CORS](https://enable-cors.org/) between the swagger editor and the application. To enable CORS, add the following lines of code to the [application main server file](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L17) after `router.use`:
-
-```
-res.header("Access-Control-Allow-Origin", "*");
-res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-```
-Restart the application.
-
-***Note: When finished verification, rollback these changes in the file.***
-
-2. You will need to enable the swagger editor to talk to the application by specifying the application host and port in the loaded specification in the editor. Otherwise, the editor thinks its host is the editor URL. To set the application context, update the OpenAPI specification in the swagger editor by adding the following line after the `basePath` line:
-
-```
-host: 'localhost:3000'
-```
-Note: This will only change the specification loaded in the editor. Beware that you do not save to the specification on your system.
 
 ## Follow-on
 
