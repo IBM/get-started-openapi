@@ -23,12 +23,12 @@ npm install -g swagger-inline
 
 2. Add OpenAPI endpoints inline comments to the application API endpoints
 
-The comments should be added to the sample app `server.js` file where the app API endpoints are defined. The [visitors POST API](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L38) comment has already being added for guidance.
+The comments should be added to the sample app `server.js` file where the app API endpoints are defined. The [visitors POST API](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L39) comment has already been added for guidance.
 
 The comments should be added above the following API endpoints:
-- [visitors GET API](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L64)
-- [visitors GET with ID API](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L84)
-- [visitors DELETE API](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L112)
+- [visitors GET API](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L86)
+- [visitors GET with ID API](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L106)
+- [visitors DELETE API](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js#L134)
 
 as these are the API endpoints for the app.
 
