@@ -13,7 +13,7 @@ npm install --save swagger-ui
 
 2. Add the hooks to the application to serve the API documentation
 
-Add the following requirements to the top of your [application main server file](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js):
+Add the following requirements to the top of your [application main server file](https://github.com/IBM/get-started-openapi/blob/master/server.js):
 
 ```
 const swaggerTools = require('swagger-tools');
@@ -24,7 +24,7 @@ For example `openapiDoc`:
 const openapiDoc = require('./openapi/openapi');
 ```
 
-Add the following to your [application main server file](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/server.js) to initialize the Swagger UI:
+Add the following to your [application main server file](https://github.com/IBM/get-started-openapi/blob/master/server.js) to initialize the Swagger UI:
 
 ```
 swaggerTools.initializeMiddleware(openapiDoc, function (middleware) {

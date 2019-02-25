@@ -115,7 +115,7 @@ to:
 self.host = "https://<app_url_on_cloud>/v1"
 ```
 
-With the application still running on the cloud, you can run the [test code](https://github.ibm.com/developer-first-guild/get-started-openapi/blob/master/test/test_apis.py) and client as follows:
+With the application still running on the cloud, you can run the [test code](https://github.com/IBM/get-started-openapi/blob/master/test/test_apis.py) and client as follows:
 
 ```
 python ./test/test_apis.py
