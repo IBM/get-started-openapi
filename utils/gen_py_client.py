@@ -36,4 +36,4 @@ response = http.request('POST', 'https://generator.swagger.io/api/gen/clients/py
     headers={'Content-Type': 'application/json'},
     body=req_body)
 
-print response.data
+print(response.data)

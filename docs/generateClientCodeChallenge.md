@@ -70,6 +70,10 @@ With the application still running, you can run the [test code](https://github.i
 python ./test/test_apis.py
 ```
 
+*Note: You may see warning messages similar to the following:
+```./usr/lib/python3.6/unittest/suite.py:107: ResourceWarning: unclosed <socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 34108), raddr=('127.0.0.1', 3000)>```
+This is possibly due to a session object not being closed in the generated client code. It can be ignored in this scenario.*
+
 ## Completion
 
 You generated a client library and using the test code you called the API endpoints.
